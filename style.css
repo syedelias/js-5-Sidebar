@@ -1,0 +1,51 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.nav-btn {
+  border: 0;
+  background: none;
+  float: right;
+  padding: 20px 60px;
+}
+.title {
+  background-color: rgb(171, 198, 146);
+  box-shadow: 4px 4px 4px black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  overflow: hidden;
+  width: 0;
+}
+.titleHide {
+  width: 40%;
+}
+.sub-title {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid gray;
+  box-shadow: 4px 4px 4px black;
+}
+.close-button {
+  border: 0;
+  background: none;
+}
+.navbars {
+  margin-top: 20px;
+  padding: 0;
+}
+.navbar a {
+  width: 100%;
+  font-size: 30px;
+  text-decoration: none;
+  padding: 5px 50px;
+}
+.navbar a:hover {
+  background-color: aqua;
+}
+.navbar {
+  padding: 0;
+  margin: 0;
+}

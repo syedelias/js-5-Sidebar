@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="sidebar" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>sidebar</title>
+  </head>
+  <body>
+    <button class="nav-btn">
+      <i class="fa-solid fa-bars pt-4 fs-1"></i>
+    </button>
+    <div class="title">
+      <div class="sub-title">
+        <h1 class="h pt-4">SIDEBAR</h1>
+        <button class="close-button">
+          <i class="fa-sharp fa-solid fa-xmark pt-4 mx-4 fs-1"></i>
+        </button>
+      </div>
+      <ul class="navbars">
+        <li class="navbar"><a href="#">Home</a></li>
+        <li class="navbar"><a href="#">About</a></li>
+        <li class="navbar"><a href="#">Project</a></li>
+        <li class="navbar"><a href="#">Contact</a></li>
+      </ul>
+    </div>
+    <script>
+      let show = document.querySelector(".nav-btn");
+      let add = document.querySelector(".title");
+      let closeBtn = document.querySelector(".fa-xmark");
+      show.addEventListener("click", () => {
+        add.classList.toggle("titleHide");
+      });
+      closeBtn.addEventListener("click", () => {
+        add.classList.remove("titleHide");
+      });
+    </script>
+  </body>
+</html>
